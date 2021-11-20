@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cristhian Aguilera</title>
+    <link>https://ngunsu.github.io/</link>
+    <description>Recent content on Cristhian Aguilera</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://ngunsu.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ex</title>
+      <link>https://ngunsu.github.io/ex/</link>
+      <pubDate>Fri, 26 Jun 2020 17:37:52 -0400</pubDate>
+      
+      <guid>https://ngunsu.github.io/ex/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
