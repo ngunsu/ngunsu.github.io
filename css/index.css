@@ -1,0 +1,325 @@
+/* ------------------------------------------------------------------------- AVATAR */
+.perfil{
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 5fr;
+	grid-gap: 10px;
+	margin-bottom: 20px;
+}
+
+.avatar{
+	width: 270px;
+	margin: 10px;
+	border: 2px solid white;
+}
+
+.contacto{
+	background-color: #f2f2f2;
+	max-width: 300px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+.contacto label{
+	font-size: 20px;
+	padding: 2px;
+	margin: 10px;
+	text-align: center;
+}
+
+.contacto ul{
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 5px;
+}
+
+.contacto ul li a span{
+	font-size: 30px;
+	padding: 2px;
+	transition: 0.3s;
+	color: #3b7ecc;
+}
+
+.contacto ul li a span:hover {
+	color: #de9f18;
+}
+
+.contacto a{
+	text-decoration: none;
+}
+
+.cu{
+	background-color: #3b7ecc;
+	padding: 3px;
+}
+
+.cu a{
+	font-size: 18px;
+	color: white;
+	font-weight: bold;
+	transition: 0.3s;
+}
+
+.cu:hover {
+	background-color: rgba(59,126,204,0.8);
+}
+
+.formacion{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 20px;
+	grid-row-gap: 10px;
+}
+
+.formacion span{
+	margin-right: 5px;
+}
+
+.formacion p{
+	color: #696969;
+}
+
+.financiamiento img{
+	width: 15%; 
+	margin-top: 0;
+}
+
+.barras{
+	margin-bottom: 35px;
+}
+
+.bar{
+	width: 100%;
+	height: 15px;
+	border-radius: 100px;
+	margin-bottom: 23px;
+}
+
+.bar label{
+	font-size: 14px;
+	margin-left: 5px;
+}
+.valor{
+	height: 100%;
+	border-radius: 100px;
+	position: static;
+}
+
+.subPub{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 5px;
+}
+
+.post{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 20px;
+}
+.congresos label , .revistas label,
+.progreso, .proyectos label{
+	font-size: 23px;
+}
+
+.congresos span, .revistas span,
+.icon-stats-bars2, .proyectos span{
+	margin-right: 5px;
+	font-size: 20px;
+}
+
+.revistas #MyBtn, .congresos #MyBtn, 
+.proyectos #MyBtn{
+	background-color: transparent;
+	border: none;
+	font-size: 15px;
+}
+
+.revistas #MyBtn:hover, .proyectos #MyBtn:hover{
+	cursor: pointer;
+}
+
+.revista, .congreso, .proyecto{
+	background-color: #f2f2f2;
+	padding: 10px;
+	margin-bottom: 20px;
+	transition: 0.3s;
+}
+
+.revista:hover, .congreso:hover, .proyecto:hover {
+	transform: scale(1.1);
+	-webkit-box-shadow: 6px 6px 5px 1px rgba(0,0,0,0.31);
+	-moz-box-shadow: 6px 6px 5px 1px rgba(0,0,0,0.31);
+	box-shadow: 6px 6px 5px 1px rgba(0,0,0,0.31);
+}
+
+.bibtex:hover{
+	cursor: pointer;
+}
+
+.revista #titulo, .congreso #titulo,
+.proyecto #titulo{
+	font-size: 18px;
+}
+
+.revista #titulo a, .revista p a,
+.revistas #MyBtn, .bibtex{
+	color: #3b7ecc;
+	text-decoration: underline;
+	transition: 0.3s;
+}
+
+.revista #titulo a:hover, .revista p a:hover,
+.revistas #MyBtn:hover{
+	color: #255a99;
+}
+
+
+.proyecto #titulo a, .proyecto p a,
+.proyectos #MyBtn{
+	color: #de9f18;
+	text-decoration: underline;
+	transition: 0.3s;
+}
+
+.proyecto #titulo a:hover , .proyecto p a:hover ,
+.proyectos #MyBtn:hover {
+	color: #a37410;
+}
+
+.conferencia #titulo a, .conferencia p a,
+.proyectos #MyBtn{
+	color: #d95243;
+	text-decoration: underline;
+	transition: 0.3s;
+}
+
+.conferencia #titulo a:hover , .conferencia p a:hover ,
+.conferencias #MyBtn:hover .bibtex:hover {
+	color: #b34034;
+}
+
+.texto {
+	display: none;
+}
+.bib:active > .texto{
+	display: block;
+  }
+
+@media (max-width: 1200px){
+	.financiamiento img{
+		width: 20%;
+	}
+	.formacion{
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (max-width: 900px){
+	.perfil{
+		display: block;
+	}
+
+	.contacto{
+		max-width: none;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.contacto a{
+		font-size: 27px;
+		padding: 5px;
+	}
+}
+
+@media (max-width: 500px){
+	.formacion{
+		display: block;
+	}
+
+	.formacion label{
+		margin-right: 0;
+		margin-top: 10px;
+	}
+
+	.formacion p{
+		margin-bottom: 10px;
+	}
+
+	.post{
+		grid-template-columns: 1fr;
+	}
+
+	.financiamiento img{
+		width: 20%;
+	}
+}
+
+
+.modal{
+	display: none;
+	position: fixed;
+	z-index:1;
+	overflow: auto;
+	left: 0;
+	top:0;
+	width: 100%;
+	height:100%;
+	background: rgba(0, 0, 0, 0.452);
+}
+
+.contenido-modal{
+	position: relative;
+	background-color: #fefefe;
+	margin: auto;
+	width: 60%;
+	box-shadow: 0 0 6px 0 rgba(0, 0, 0, .4);
+	animation-name: modal;
+	animation-duration: 1s;
+}
+@keyframes modal{
+	from{top:-330px; opacity:0;}
+	to{top:0; opacity:1;}
+}
+.close{
+	color: #f2f2f2;
+	font-size: 25px;
+	font-weight: bold;
+	float: right;
+}
+
+.close:hover{
+	color:#7f8c8d;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.modal-header, .footer{
+	padding: 8px 16px;
+	background: #3b7ecc;
+	color: white;
+}
+
+p{
+	text-align: justify;
+}
+
+.modal-body{
+	padding: 20px 16px;
+}
+
+@media screen and (max-width:900px){
+	.contenido-modal{
+		width: 70%;
+	}
+	.textos{
+		padding: 150px;
+	}
+}
+
+@media screen and (max-width:500px){
+	.textos{
+		padding:50px;
+	}
+}

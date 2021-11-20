@@ -1,0 +1,152 @@
+*{
+    font-family: 'Arial', sans-serif;
+    font-weight: normal;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #242424;
+}
+
+
+body{
+  background-color: white;
+  margin-right: 12%;
+  margin-left: 12%;
+  margin-top: 10px;
+}
+
+.contenido, header, footer{
+  max-width: 1500px;
+}
+
+.contenido {
+  border-bottom: 20px;
+}
+
+.idiomas {
+  width: 100%;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.idiomas button {
+  border-radius: 0;
+  padding: 7px;
+  border: none;
+  background-color: #f2f2f2;
+}
+
+.idiomas button:hover{
+  background-color: #e8e8e8;
+}
+
+/* ----------------------------------------------------------------------- HEADER */
+header{
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+header nav{
+  border-bottom: 2px solid #f2f2f2;
+  margin-bottom: 10px;
+}
+
+header nav ul{
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+header nav ul li{
+  padding: 5px;
+  transition: 0.4s;
+}
+
+header nav ul li a{
+  text-decoration: none;
+  font-size: 20px;
+}
+
+header nav ul li span{
+  margin-right: 5px;
+  font-size: 20px;
+}
+header nav ul li:hover{
+  background-color: #f2f2f2;
+}
+
+@media (max-width: 900px){
+  header nav ul{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  header nav ul li{
+    border-bottom: 2px solid #f2f2f2;
+
+  }
+  header nav ul li a, header nav ul li a span{
+    font-size: 18px;
+  }
+
+  .tercero{
+    width: 200%;
+  }
+}
+
+/* ----------------------------------------------------------------------- ICONS-SPANS */
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?gabvbi');
+  src:  url('fonts/icomoon.eot?gabvbi#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?gabvbi') format('truetype'),
+    url('fonts/icomoon.woff?gabvbi') format('woff'),
+    url('fonts/icomoon.svg?gabvbi#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-school:before {
+  content: "\e900";
+}
+.icon-education:before {
+  content: "\e903";
+}
+.icon-home:before {
+  content: "\e901";
+}
+.icon-book:before {
+  content: "\e91f";
+}
+.icon-folder-open:before {
+  content: "\e930";
+}
+.icon-bubbles3:before {
+  content: "\e96f";
+}
+.icon-stats-bars2:before {
+  content: "\e99d";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-github:before {
+  content: "\eab0";
+}
+.icon-linkedin:before {
+  content: "\eac9";
+}
